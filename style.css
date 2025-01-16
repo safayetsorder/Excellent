@@ -1,14 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+body {
+    font-family: "Rubik", serif;
+}
+
+.hello-text {
+    display: flex;
+    align-items: end;
+}
+
+.hello-text::after {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    content: '';
+}
+
 /* first header start  */
 
 .first-header-container {
     display: flex;
-    padding: 80px;
+    padding: 20px 80px;
     justify-content: space-between;
     align-items: center;
 }
@@ -17,16 +36,17 @@
     cursor: pointer;
 }
 
+.first-header-right {
+    display: flex;
+    gap: 20px;
+}
+
 .first-header-right a {
     color: black;
     text-decoration: none;
-    display: inline-flex;
-    gap: 200px;
-
-
 }
 
-.first-header-right a :hover {
+.first-header-right a:hover {
     transition: 1s;
     color: blueviolet;
 }
@@ -42,19 +62,15 @@
 
 }
 
-.second-header-right img {
-    width: 50%;
-    height: 100%;
-    margin-left: 320px;
-    margin-bottom: 12px;
 
-}
 
 .second-header-left {
     padding: 25px;
-    width: 50%;
+    width: 100%;
     margin-bottom: 20px;
 }
+
+
 
 .second-header-left h3 {
     margin-bottom: 10px;
@@ -63,6 +79,14 @@
 
 .second-header-left h1 {
     margin-bottom: 10px;
+}
+
+.second-header-right {
+    width: 100%;
+}
+
+.second-header-right img {
+    width: 100%;
 }
 
 .left-button {
@@ -83,16 +107,45 @@
 
 }
 
-.left-button :hover {
+.left-button:hover {
     background-color: white;
     color: blueviolet;
     transition: 0.5s;
 }
 
-.right-button :hover {
+.right-button:hover {
     color: white;
     background-color: blueviolet;
     transition: 0.5s;
 }
 
 /* second header end  */
+/* midle start  */
+.midle-container {
+    display: flex;
+}
+
+.midle-container .midle-left {
+    width: 100%;
+}
+
+.midle-container .midle-right {
+    width: 100%;
+}
+
+.midle-container .midle-left img {
+    width: 50%;
+    display: flex;
+    margin: auto;
+}
+
+
+
+.last-button {
+    display: flex;
+    margin-left: auto;
+    padding: 20px;
+    color: aliceblue;
+    background-color: blueviolet;
+    border: none;
+}
